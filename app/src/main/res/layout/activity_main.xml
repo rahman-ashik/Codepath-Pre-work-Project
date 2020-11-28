@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="todo.example.simpletodo.MainActivity">
+
+    <Button
+        android:id="@+id/button_Add"
+        android:layout_width="150dp"
+        android:layout_height="69dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:text="Add"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="390dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toStartOf="@+id/button_Add"
+        android:ems="10"
+        android:hint="Enter New Task"
+        android:inputType="textPersonName"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textIsSelectable="true"
+        android:textSize="30sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ListofItems"
+        android:layout_width="326dp"
+        android:layout_height="601dp"
+        android:layout_above="@+id/editText"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="17dp"
+        android:background="#F3DCDC"
+        android:outlineProvider="none"
+        android:rotation="0"
+        android:rotationX="0"
+        android:rotationY="0"
+        android:textSize="46sp"
+        android:visibility="visible" />
+</RelativeLayout>
